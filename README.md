@@ -16,7 +16,7 @@ To reproduce the metadata experiment, simply run
 
 The label space for each task we extract is in <code>Rethinking-instruction-effectiveness/analysis_util/label_space.json</code>.
 
-To reproduce the results of ablation study and metadata performance, follow the description below. Notice that the main body of this codebase is adapted from [Tk-Instruct](https://github.com/yizhongw/Tk-Instruct).
+To reproduce the results of ablation study, follow the description below. Notice that the main body of this codebase is adapted from [Tk-Instruct](https://github.com/yizhongw/Tk-Instruct).
 
 We have put our annotation on task definitions in the *content_type_annotation.json* file under the folder <code>Rethinking-instruction-effectiveness/analysis_util</code>.
 
