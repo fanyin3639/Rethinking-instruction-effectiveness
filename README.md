@@ -3,9 +3,9 @@ The codebase for our ACL2023 paper: [Did You Read the Instructions? Rethinking t
 
 ## Pre-requisite 
 Make sure you have CUDA 11 installed as the deepspeed version used in the codebase only supports CUDA 11. The code is tested with Python 3.8.
-When you have the above environment ready.
+When you have the above environment ready,
 
-<code>pip install -r requirements.txt</code>
+<code>pip install -r requirements.txt</code>.
 
 Next, download the NIv2 data from the [official website](https://github.com/allenai/natural-instructions). Put the extracted task data into <code>Rethinking-instruction-effectiveness/data</code>
 
