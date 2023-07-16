@@ -40,4 +40,12 @@ To do ablation, change the --do_ablation to True and --use_meta_data to False. T
 You may change your own ablation type by setting --ablate_content to your own choice.
 
 ## Part II: STDC, an automatic instruction compression algorithm.
-More code coming soon.
+To reproduce our instruction compression results, you first want to install supar==1.1.1, which provides a constituency parser that we will use later to obtain parse tree.
+
+Then, navigate to <code>analysis_utils/</code>. Run <code>python parse_tree.py</code>. You can indicate your output path and task name to get parse tree for a specific task. Currently, it is set to task1670_md_gender_bias_text_modification as an example.
+
+Now, you are ready for the compression. Set the path in  <code> ./scripts/run_reduction.sh</code>, make sure you have the right task name and parsed tree. Notice you will also need a instruction tuned model for this set of experiments.
+
+Run <code> bash ./scripts/run_reduction.sh </code>.
+
+The compressed instruction and the coverage rate is written to the output directory.
